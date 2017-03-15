@@ -23,6 +23,27 @@ var aqiData = [
   ["成都", 90],
   ["西安", 100]
 ];
+// 按数字排序
+function jssort(aqiData){
+  for(var i=0; i<aqiData.length-1;i++){
+    for(var j=0; j<aqiData.length-i-1;j++){
+        var j_num = aqiData[j][1];
+        var j_num_one = aqiData[j+1][1];
+      if(j_num > j_num_one){
+          var temp = aqiData[j][1];
+          var temp1 = aqiData[j][0];
+            aqiData[j][1] = aqiData[j+1][1];
+            aqiData[j][0] = aqiData[j+1][0];
+            aqiData[j+1][1] = temp;
+            aqiData[j+1][0] = temp1;
+      }
+    }
+  }
+ return aqiData;
+}
+var result=[];
+result =jssort(aqiData);
+console.log(result);
 
 (function () {
   /*
