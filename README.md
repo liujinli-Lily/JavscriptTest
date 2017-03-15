@@ -1,3 +1,5 @@
 
 # JavscriptTest
-f87289ebfe7db77012d792bb50fc7eadfdcbdb0f
+javascript 基础练习
+做个人练习提升
+涉及dom操作，数组循环处理，排序
